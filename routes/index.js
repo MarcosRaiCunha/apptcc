@@ -31,7 +31,7 @@ router.post('/temp', function(req, res){
  	} 
 
  	else {
- 		var request = require('request');
+		var request = require('request');
 		request('http://192.168.0.50/off', function (error, response, body) {
 		    if (!error && response.statusCode == 200) {
 		        console.log(body) // Print the web page.
